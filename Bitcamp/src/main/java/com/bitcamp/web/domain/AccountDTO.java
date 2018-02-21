@@ -12,6 +12,7 @@ public class AccountDTO {
 						+ ", 계좌번호= + accountNum"
 						+ ", 잔액=" + money
 						+ ", 고객ID=" + id +"]";
+		//aad
 	}	
 	
 }
