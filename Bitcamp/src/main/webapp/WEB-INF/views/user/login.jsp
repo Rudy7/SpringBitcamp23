@@ -1,4 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script src="${js}/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	
+
 <div id="wrapper3">
 		<header id="index_header">
 			<a href="#">프로젝트</a>
@@ -8,7 +18,7 @@
 		 <table id="index_table" >
 			<tr >
 			<td colspan="5">
-				<form id="index_login_box" action="${ctx}/user.do">
+				
 					<table>
 							<tr>
 		   						<td>
@@ -27,7 +37,7 @@
 								</td>
 							</tr>	
 					</table>
-				</form>
+				
 				<table>
 				<tr>
 					<td>
@@ -44,32 +54,11 @@
 			</article>
 	</section>
 </div>
-<%@ include file= "../common/footer.jsp" %>
-<script>
-document.querySelector('#go_join_link')
-		.addEventListener("click",
-		function (){
-			alert("로그인창에서 회원가입으로 가기직전");
-			location.href="${ctx}/user.do?cmd=move&page=join";
-		},false);
-
-document.querySelector('#go_jdbc_link')
-		.addEventListener("click",
-		function(){
-			location.href="${ctx}/common.do";
-		},false);
-
-document.querySelector('#index_login_btn')
-		.addEventListener("click",
-		function(){
-			alert("============로그인 클릭이벤트 발생============");
-			document.querySelector('#index_login_box').submit();
-		},false);
-		
-document.querySelector('#go_admin_link').addEventListener("click",
-		function(){
-		location.href="${ctx}/admin/main.do";    /* /admin/main.do */
-		},false); 		
-</script>
 </body>
+<script>
+$('#index_login_btn').on('click',function(){
+	alert("로그인 버튼클릭 ");
+	location.href = "${context}/mypage"
+});
+</script>
 </html>

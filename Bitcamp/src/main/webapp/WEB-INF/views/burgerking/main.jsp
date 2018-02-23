@@ -1,6 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>	
-<%@ include file= "../common/header.jsp" %>	
-<%@ include file= "../common/nav.jsp" %>
 <section>
 	<article>
 		<header>
@@ -94,7 +92,6 @@
 </div>	
 	</article>
 </section>
-<%@ include file= "../common/footer.jsp" %>		
 </body>
 <script src="../../js/burgerking/burgerking.js"></script>
 </html>

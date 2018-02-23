@@ -6,8 +6,8 @@ import com.bitcamp.web.domain.FoodDTO;
 import com.bitcamp.web.domain.LottoDTO;
 import com.bitcamp.web.domain.MemberDTO;
 import com.bitcamp.web.domain.MobileDTO;
-import com.bitcamp.web.util.Enums.Table;
-import com.sun.corba.se.spi.orbutil.fsm.Action;
+import com.bitcamp.web.enums.Action;
+import com.bitcamp.web.enums.Table;
 
 import lombok.Data;
 

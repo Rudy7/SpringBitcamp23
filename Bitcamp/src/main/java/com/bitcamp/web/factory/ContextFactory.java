@@ -23,22 +23,6 @@ public class ContextFactory extends Factory{ // 익스텐즈할때 ContextFactor
 				;
 	} 
 	public String path(String tag) {
-//		logger.info("ContextFactory path()에 넘어온 tag 값은 {} 이다"
-//				,tag);
-//		String path = "/resources/";
-//		switch (tag) {
-//		case "js":
-//			path += "js";
-//			break;
-//		case "css":
-//			path += "css";
-//			break;
-//		case "img":
-//			path += "img";
-//			break;
-//		default:
-//			break;
-//		}
 		logger.info("ContextFactory path()에 리턴되는 경로 값은 {} 이다"
 				,create()+"");
 		return  create()+"/resources/"+tag;
