@@ -4,22 +4,24 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Document</title>
-	<script src="${js}/jquery-3.3.1.min.js"></script>
+	<script src="${path.js}/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="${path.css}/style.css" />
+	
 </head>
 <body>
 	
 
-<div id="wrapper3">
+<div id="login_wrapper3">
 		<header id="index_header">
-			<a href="#">프로젝트</a>
+			<a href="#">비트캠프 프로젝트</a>
 		</header>
 		<section >
-			<article>
+			<article >
 		 <table id="index_table" >
 			<tr >
 			<td colspan="5">
 				
-					<table>
+					<table id="login_table">
 							<tr>
 		   						<td>
 		   							<input id="id" name="id" type="text" value="kim" placeholder="ID"> <!--id=자바스크립트에서사용(.js.jsp), name=자바에서사용(.java)-->
@@ -58,7 +60,7 @@
 <script>
 $('#index_login_btn').on('click',function(){
 	alert("로그인 버튼클릭 ");
-	location.href = "${context}/mypage"
+	location.href = "${path.context}/mypage"
 });
 </script>
 </html>

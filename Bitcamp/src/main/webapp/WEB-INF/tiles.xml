@@ -11,6 +11,9 @@
 		<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp"/>
 	 </definition>
 	 <definition name="public:*/*.tiles" extends="public">
+	 	<put-attribute name="header"
+	 		value="/WEB-INF/views/common/header.jsp"
+	 	/>
 	 	<put-attribute name="content"
 	 		value="/WEB-INF/views/{1}/{2}.jsp"
 	 	/>

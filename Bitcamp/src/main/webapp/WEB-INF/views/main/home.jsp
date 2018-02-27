@@ -4,7 +4,7 @@
 	</button>
 <script>
 	$('#btn').on('click',function(){  //이게 ElementById 와 addEventListener 단축키이다.
-		location.href = "${context}/login";
+		location.href = "${path.context}/login";
 	});   
 </script>
 

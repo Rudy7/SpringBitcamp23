@@ -1,5 +1,9 @@
 package com.bitcamp.web.domain;
 
+import org.springframework.stereotype.Component;
+
+
+@Component
 public class FoodDTO {
 	private	String foodSeq, menu, price, count;
 	

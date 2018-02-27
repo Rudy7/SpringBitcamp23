@@ -14,28 +14,32 @@ import com.sun.xml.internal.bind.CycleRecoverable.Context;
 @Controller
 public class UserController {
 	private static final Logger logger = LoggerFactory.getLogger(UserController.class);
-	@Autowired ContextFactory contextFactory;
+	@Autowired ContextFactory factory;
 	@RequestMapping(value="/mypage", method=RequestMethod.GET)
 	public String mypage(Model model) {
 		logger.info("UserController mypage() {}","들어옴");
-		model.addAttribute("context",contextFactory.create());
-		model.addAttribute("js",contextFactory.path("js"));
+		model.addAttribute("path", factory.path());
 		return "user/mypage";
 	}
 	@RequestMapping(value="/nav", method=RequestMethod.GET)
 	public String nav(Model model) {
 		logger.info("UserController nav() {}","들어옴");
-		model.addAttribute("context",contextFactory.create());
-		model.addAttribute("js",contextFactory.path("js"));
+		model.addAttribute("path", factory.path());
 		return "common/nav";
+	}
+	@RequestMapping(value="/lotto/main", method=RequestMethod.GET)
+	public String lottoMain(Model model) {
+		logger.info("UserController lottoMain() {}","들어옴");
+		model.addAttribute("path", factory.path());
+		return "lotto/main";
 	}
 	@RequestMapping(value="/burger/main", method=RequestMethod.GET)
 	public String burgerMain(Model model) {
 		logger.info("UserController burgerMain() {}","들어옴");
-		model.addAttribute("context", contextFactory.create());
-		model.addAttribute("js",contextFactory.path("js"));
+		model.addAttribute("path", factory.path());
 		return "burgerking/main";
 	}
+	
 
 	
 	

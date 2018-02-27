@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Document</title>
-	<script src="${js}/jquery-3.3.1.min.js"></script>
+	<script src="${path.js}/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 <nav id="">
@@ -43,7 +43,7 @@
 <script>
 $('#burgerking').on('click',function(){
 	alert("버거킹 클릭이벤트77");
-	location.href ="${context}/burger/main";   
+	location.href ="${path.context}/burger/main";   
 });
 </script>
 </html>
