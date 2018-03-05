@@ -1,15 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>Document</title>
-	<script src="${path.js}/jquery-3.3.1.min.js"></script>
-	<link rel="stylesheet" href="${path.css}/style.css" />
-</head>
-<body>
 
-<section>
+
+<section style="margin-top: 100px">
 <article>
 	<table id="mypage-table">
 		<tr>
@@ -57,7 +49,7 @@
 	</table>
 </article>
 </section>
-</body>
+
 
 <script>
 $(function() {
@@ -67,4 +59,4 @@ $(function() {
 	});	
 });
 </script>
-</html>
+

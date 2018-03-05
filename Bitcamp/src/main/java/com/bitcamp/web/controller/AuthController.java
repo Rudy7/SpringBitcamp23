@@ -18,11 +18,7 @@ public class AuthController {
 	@RequestMapping(value="/login", method = RequestMethod.GET)
 	public String login(Model model) {
 		logger.info("AuthController login( {}","들어옴");
-		/*model.addAttribute("context", (String) contextFactory.create());
-		model.addAttribute("js",contextFactory.path("js"));
-		model.addAttribute("css",contextFactory.path("css"));
-		model.addAttribute("img",contextFactory.path("img"));*/
-		model.addAttribute("path", factory.path());
+		//model.addAttribute("path", factory.path());
 		return "public:user/login.tiles";  //퍼플릭.타일즈걸면 유저에 로그인으로 가는게 아니라. 레이아웃jsp로 가는데. 
 	}
 	

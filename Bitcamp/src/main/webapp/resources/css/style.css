@@ -6,7 +6,7 @@
 	width: 100%;
 	height: 300px;
 	border: 1px solid gray;
-	maring: 0 auto
+	maring: 0 auto;
 }
 #mypage-table tr {
 	border: 1px solid gray
@@ -48,7 +48,8 @@
 
 #header_util{margin-top:15px}
 
-
+/* burgerking */
+#burgerking-sec{style="margin-top: 70px}
 
 
 

@@ -13,7 +13,6 @@
    <link rel="stylesheet" href="${path.css}/bootstrap-theme.css" />
    <link rel="stylesheet" href="${path.css}/style.css" />
 
-   
 </head>
 <body >
 
